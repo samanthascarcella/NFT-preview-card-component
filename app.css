@@ -1,0 +1,126 @@
+html {
+    background-color: hsl(217, 54%, 11%);
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* ---- Card ---- */
+.card {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 25px;
+    padding: 8%;
+    margin: 10% 0%;
+}
+
+/* ---- Card Content ---- */
+
+.card-content {
+    padding: 5% 0 0 0;
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+}
+
+#mainImg {
+    border-radius: 25px;
+}
+
+.mainImg {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition-delay: 0.3;
+}
+
+.hoverIcon {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.card-image:hover .hoverIcon {
+    opacity: 1;
+}
+
+.card-image:hover .overlay {
+    opacity: 0.6;
+    border-radius: 25px;
+    background-color: cyan;
+    cursor: grab;
+}
+
+
+.content {
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 10px;
+}
+
+.title {
+    color: hsl(215, 51%, 70%);
+}
+
+#textHover:hover {
+    cursor: pointer;
+    color: cyan;
+}
+
+#textHover {
+    font-weight: 100;
+    color: white;
+}
+
+#span1 {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+#span2 {
+    color: hsl(215, 51%, 70%);
+}
+
+/* ---- Media div ---- */
+.iconLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+#avatarImage {
+    border: 1.5px solid white;
+    border-radius: 50%;
+}
+
+#span3 {
+    color: white;
+}
+
+#span3:hover {
+    cursor: pointer;
+    color: cyan;
+}
