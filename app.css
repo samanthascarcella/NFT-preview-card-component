@@ -1,145 +1,135 @@
-html {
-    background-color: hsl(217, 54%, 11%);
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
 }
 
-/* ---- Card ---- */
+.container {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
 .card {
+    margin: 2rem 1rem;
+    padding: 20px;
     background-color: hsl(216, 50%, 16%);
-    border-radius: 25px;
-    padding: 8% 8% 4% 8%;
-    margin: 15% 4%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.75);
 }
 
-/* ---- Card Content ---- */
-
-.card-content {
-    padding: 8% 0 0 0;
-}
-
-.card-image {
+.img-top {
+    border-radius: 12px;
+    overflow: hidden;
     position: relative;
+}
+
+.img-top img {
     width: 100%;
-}
-
-#mainImg {
-    border-radius: 10px;
-}
-
-.mainImg {
-    opacity: 1;
     display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
 }
 
-.overlay {
+.img-overlay {
     position: absolute;
-    top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
+    top: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
-    transition-delay: 0.3;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
 }
 
-.hoverIcon {
+.img-overlay img {
     position: absolute;
-    opacity: 0;
-    top: 50%;
+    width: 50px;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    top: 50%;
     transform: translate(-50%, -50%);
-    transition: .3s;
 }
 
-.card-image:hover .hoverIcon {
-    opacity: 1;
-}
-
-.card-image:hover .overlay {
-    opacity: 0.6;
-    border-radius: 25px;
-    background-color: cyan;
-    cursor: grab;
-}
-
-
-.content {
-    border-bottom: 1px solid hsl(215, 32%, 27%);
-}
-
-.title {
-    color: hsl(215, 51%, 70%);
-}
-
-#textHover:hover {
+.img-top:hover .img-overlay {
+    display: block;
     cursor: pointer;
-    color: cyan;
 }
 
-#textHover {
-    font-weight: 100;
-    color: white;
-}
-
-#span1 {
-    color: hsl(178, 100%, 50%);
+.card-body a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
     font-weight: 600;
+    font-size: 20px;
+    padding: 20px 0;
+    display: inline-block;
 }
 
-#span2 {
+.card-body a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.card-body p {
     color: hsl(215, 51%, 70%);
+    font-weight: 300;
 }
 
-/* ---- Media div ---- */
-.media {}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
 
-.iconLine {
+.eth,
+.days {
     display: flex;
     justify-content: space-between;
 }
 
-.media img {
-    border: 1.5px solid white;
+.eth p {
+    padding-left: 5px;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.days p {
+    padding-left: 5px;
+}
+
+hr {
+    border-color: hsl(215, 32%, 40%);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.footer img {
+    width: 30px;
+    border: 1px white solid;
     border-radius: 50%;
-    width: 75%;
 }
 
-.media .title span {
-    color: white;
+.footer p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 16px;
+    padding-left: 20px;
 }
 
-.media .title span:hover {
-    cursor: pointer;
-    color: cyan;
+.footer a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
 }
 
-@media (min-width: 1440px) {
-    .card {
-        width: 340px;
-        height: auto;
-        margin: 0 auto;
-        padding: 25px;
-        position: relative;
-
-    }
-
-    .container {
-        margin-top: 7%;
-    }
-
-    .
+.footer a:hover {
+    color: hsl(178, 100%, 50%);
 }
