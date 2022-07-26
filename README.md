@@ -26,8 +26,7 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
-
-![](../../../Desktop/Screen%20Shot%202022-07-26%20at%2010.13.40%20AM.png)
+![](./screenshot.png)
 
 ### Links
 
