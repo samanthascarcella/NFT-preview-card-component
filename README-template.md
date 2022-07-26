@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-Screenshots are not provided.
+![](../../../Desktop/Screen%20Shot%202022-07-26%20at%2010.13.40%20AM.png)
 
 ### Links
 
 - Solution URL: https://samanthascarcella.github.io/NFT-preview-card-component/
-- Live Site URL: N/A
+- Live Site URL: https://samanthascarcella.github.io/NFT-preview-card-component/
 
 ## My process
 
@@ -45,17 +45,17 @@ Screenshots are not provided.
 
 ### What I learned
 
-- How to utilize the Bulma component "card" and the available customizations 
-- How to use :hover and create an overlay 
-- How to avoid using "id" 
+- Create a responsive card using flexbox 
+- Use of :hover 
+- Layering elements to create an overlay
 
 ### Continued development
 
-- Use absolute vs relative positions 
+- Use of absolute vs relative positions 
 
 ### Useful resources
 
-- https://bulma.io
+- N/A
 
 ## Author
 
